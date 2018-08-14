@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>git common commands</title>
+    <style media="screen">
+      img{
+        display: block;
+        padding: 20px 0;
+      }
+    </style>
   </head>
   <body>
     <h1>Github Practice Exercise</h1>
@@ -31,13 +37,55 @@
       create    app/views/contacts<br>
       create    test/controllers/contacts_controller_test.rb<br>
       create    app/helpers/contacts_helper.rb<br>
-      create      app/assets/javascripts/contacts.coffee<br>
-      create      app/assets/stylesheets/contacts.scss</p>
+      create    app/assets/javascripts/contacts.coffee<br>
+      create    app/assets/stylesheets/contacts.scss
+      </p>
+      <li>rake routes</li>
+      <p>gives a list of all the routes in application</p>
+      <li>The new method will return a new object while create will return the object and save it to the database. Using the new method, an object can be instantiated without being saved</li>
+      <li>def _________ end creates a new custom method on the object</li>
+      <li>rails generate scaffold Post name:string title:string content:text</li>
+      <img src="scaffolding.png" alt="">
+      <li>after you need to rake db:migrate</li>
+      <img src="rest.png" alt="">
+      <img src="modelview1.png" alt="">
+      <img src="modelview2.png" alt="">
+      <img src="belongsto.png" alt="">
+      <li>String interpolation</li>
+      <img src="interpolation.png" alt="">
+      <li>Model generator</li>
+      <li>Here the table name is plural (users) even though the model name is singular (User), which reflects a linguistic convention followed by Rails: a model represents a single user, whereas a database table consists of many users.</li>
+      <img src="modelgen.png" alt="">
+      <li>Sandbox</li>
+      <li>rails console --sandbox</li>
+      <li>common commands</li>
+      <li>user = User.new(name: "Michael Hartl", email: "mhartl@example.com")</li>
+      <li>user.save</li>
+      <li>User.create(name: "A Nother", email: "another@example.org")</li>
+      <li>access things with dot notation ex: user.name user.email</li>
+      <li>User.find(1)</li>
+      <li>User.find_by(email: "mhartl@example.com")</li>
+      <li>User.all</li>
+      <li>User.count</li>
+      <li>http://www.rubular.com/ test ruby regular expressions</li>
+      <li>user validation example</li>
+      <img src="validate.png" alt="">
+      <li>resources</li>
+      <img src="resource1.png" alt="">
+      <img src="resource2.png" alt="">
+      <li>params hash</li>
+      <img src="paramshash.png" alt="">
+
+
     </ul>
     <h2>Command line resources</h2>
     <ul>
       <li><a target="_blank" href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html">List of Git Commands</a></li>
       <li><a target="_blank" href="https://www.youtube.com/watch?v=DmKNDxlNLoE">Devtips video</a></li>
+      <li><a target="_blank" href="https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/">explanation of rails concepts</a></li>
+      <li><a href="https://www.youtube.com/watch?v=y57OnWV6dRE&list=LLFqfFEZpo5xoMVfw6tey1hQ&index=3&t=0s"></a>params hash explained</li>
+
+
     </ul>
   </body>
 </html>
